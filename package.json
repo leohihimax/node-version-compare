@@ -1,0 +1,28 @@
+{
+  "name": "node-version-compare",
+  "version": "1.0.0",
+  "description": "a node module to compare semver version",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leohihimax/node-version-compare"
+  },
+  "keywords": [
+    "semver",
+    "version",
+    "compare"
+  ],
+  "author": "jiajun ma <leomajiajun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leohihimax/node-version-compare/issues"
+  },
+  "homepage": "https://github.com/leohihimax/node-version-compare",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^7.1.1"
+  }
+}
