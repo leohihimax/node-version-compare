@@ -1,7 +1,7 @@
 
 function compare (v1, v2) {
-    var flag1 = v1.indexOf('-') > -1 ? true : false;
-    var flag2 = v2.indexOf('-') > -1 ? true : false;
+    var flag1 = v1.indexOf('-') > -1;
+    var flag2 = v2.indexOf('-') > -1;
     var arr1 = split(flag1, v1);
     var arr2 = split(flag2, v2);
     arr1 = convertToNumber(arr1);
