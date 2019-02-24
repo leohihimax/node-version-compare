@@ -1,6 +1,6 @@
 {
   "name": "node-version-compare",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a node module to compare semver version",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/leohihimax/node-version-compare",
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "should": "^7.1.1"
+    "mocha": "^6.0.1",
+    "should": "^13.2.3"
   }
 }
