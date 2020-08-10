@@ -1,5 +1,7 @@
-
 function compare(v1, v2) {
+  v1 = `${v1}`;
+  v2 = `${v2}`;
+  
   var flag1 = v1.indexOf('-') > -1;
   var flag2 = v2.indexOf('-') > -1;
   var arr1 = split(flag1, v1);
@@ -31,6 +33,8 @@ function compare(v1, v2) {
 }
 
 function split(flag, version) {
+  version = `${version}`;
+  
   var result = [];
   if (flag) {
     var tail = version.split('-')[1];
@@ -51,5 +55,3 @@ function convertToNumber(arr) {
 }
 
 module.exports = compare;
-
-
