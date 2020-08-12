@@ -1,6 +1,7 @@
+'use strict';
+
 var should = require('should');
 var compare = require('../index');
-
 
 describe('index.js', function () {
   it('1.0.0 < 1.0.1', function () {
@@ -41,7 +42,7 @@ describe('index.js', function () {
 
   it('0.0.0 == 0.0.0', function () {
     compare('0.0.0', '0.0.0').should.equal(0);
-  })
+  });
 
   it('9.178.1350-beta.66.0.183.99999 == 9.178.1350-beta.66.0.183.99999', function () {
     compare('9.178.1350-beta.66.0.183.99999', '9.178.1350-beta.66.0.183.99999').should.equal(0);
@@ -51,4 +52,22 @@ describe('index.js', function () {
     compare('1.0.0', '1.0.0-beta.2').should.equal(1);
   });
 
-})
+  describe('Test input values as numbers', function () {
+    it('1 == "1"', function () {
+      compare(1, '1').should.equal(0);
+    });
+
+    it('"1" == 1', function () {
+      compare('1', 1).should.equal(0);
+    });
+
+    it('"1.1" == 1.1', function () {
+      compare('1.1', 1.1).should.equal(0);
+    });
+
+    it('1.1 == "1.1"', function () {
+      compare(1.1, '1.1').should.equal(0);
+    });
+  });
+
+});
